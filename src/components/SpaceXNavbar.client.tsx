@@ -21,7 +21,7 @@ export default function SpaceXNavbarClient({ companyName }: { companyName: strin
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-sm ">
+    <nav className="sticky top-0 z-50 backdrop-blur-sm bg-black ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-around items-center h-16">
           {/* Logo */}
