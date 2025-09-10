@@ -18,9 +18,43 @@
     --foreground: #ededed;
   }
 }
-
+@font-face {
+  font-family: "Euclid-Circular-B";
+  src: url("../../public/font/Euclid-Circular-B.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Tesla";
+  src: url("../../public/font/Tesla.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Spacex";
+  src: url("../../public/font/Spacex.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Euclid-Circular-B", sans-serif;
+}
+
+@keyframes border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border {
+  background-size: 200% 200%;
+  animation: border 3s linear infinite;
 }
